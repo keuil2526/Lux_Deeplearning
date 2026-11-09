@@ -1,0 +1,75 @@
+Execution Started :  2026-11-08T20:55:48
+
+========== Data Load Completed ==========
+
+Data Size :  (5814, 133)
+                                          image_path                                         image_name  ...  surface_group label_kind
+0  /content/drive/MyDrive/AI_Lux_Project/Database...  F001__Tbeige__LC250_UL239_UR220_LR248_LL240__b...  ...  colored_paper     5point
+1  /content/drive/MyDrive/AI_Lux_Project/Database...  F001__Tbeige__LC250_UL239_UR220_LR248_LL240__b...  ...  colored_paper     5point
+2  /content/drive/MyDrive/AI_Lux_Project/Database...  F001__Tbeige__LC250_UL239_UR220_LR248_LL240__c...  ...  colored_paper     5point
+3  /content/drive/MyDrive/AI_Lux_Project/Database...  F001__Tbeige__LC250_UL239_UR220_LR248_LL240__d...  ...  colored_paper     5point
+4  /content/drive/MyDrive/AI_Lux_Project/Database...  F001__Tbeige__LC250_UL239_UR220_LR248_LL240__d...  ...  colored_paper     5point
+
+[5 rows x 133 columns]
+
+========== Data Information ==========
+
+<class 'pandas.DataFrame'>
+RangeIndex: 5814 entries, 0 to 5813
+Columns: 133 entries, image_path to label_kind
+dtypes: float64(104), int64(13), str(16)
+memory usage: 7.7 MB
+
+             lux_C       lux_UL       lux_UR       lux_LR  ...  UR_minus_squarecell_0_4_luma  C_minus_squarecell_2_2_luma  LR_minus_squarecell_4_4_luma  LL_minus_squarecell_4_0_luma
+count  5814.000000  3514.000000  3514.000000  3514.000000  ...                   5814.000000                  5814.000000                   5814.000000                   5814.000000
+mean    626.394049   528.241036   515.237052   579.204895  ...                     -4.343223                    -0.051409                      1.192352                      0.490210
+std     354.231517   288.509259   260.942327   263.629764  ...                     11.248644                     0.588374                      8.922998                      8.474218
+min       2.000000     2.000000     1.000000     1.000000  ...                    -57.606663                    -7.204880                    -52.792740                    -56.850651
+25%     362.000000   297.000000   299.000000   400.250000  ...                     -5.834969                    -0.338791                     -2.361396                     -2.270327
+50%     598.000000   492.500000   498.000000   569.000000  ...                     -2.449752                    -0.039936                     -1.024569                     -0.814350
+75%     838.000000   678.000000   686.000000   733.000000  ...                     -0.333901                     0.234234                      0.806264                      1.210352
+max    2280.000000  1925.000000  1586.000000  1646.000000  ...                     76.517273                     6.696587                     71.845284                     66.455750
+
+[8 rows x 117 columns]
+
+Missing Values
+point             4522
+physical_point    4522
+table_point       4522
+lux_UL            2300
+lux_UR            2300
+lux_LR            2300
+lux_LL            2300
+dtype: int64
+Duplicate Rows :  0
+
+========== Target Distribution ==========
+
+count    5814.000000
+mean      626.394049
+std       354.231517
+min         2.000000
+25%       362.000000
+50%       598.000000
+75%       838.000000
+max      2280.000000
+Name: target_lux, dtype: float64
+
+========== Label Kind Distribution ==========
+
+label_kind
+5point    3514
+1point    2300
+Name: count, dtype: int64
+
+========== Surface Group ==========
+
+                     count        mean         std   min    25%    50%    75%     max
+surface_group_norm                                                                   
+colored_paper       2376.0  566.690657  310.573088  51.0  326.5  557.0  769.0  1600.0
+other                370.0  600.259459  217.820499  68.0  484.0  637.5  726.0  1050.0
+table               1505.0  686.461130  388.574076   2.0  384.0  645.0  914.0  2280.0
+white_paper         1563.0  665.500960  391.322554   2.0  359.0  608.0  897.5  2280.0
+
+========== EDA Completed ==========
+

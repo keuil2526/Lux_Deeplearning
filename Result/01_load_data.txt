@@ -1,0 +1,17 @@
+Execution Started :  2026-11-08T21:09:36
+
+========== Annotation Data Loaded ==========
+
+Annotation Shape :  (5814, 23)
+
+========== Feature Data Loaded ==========
+
+Feature Shape :  (5814, 133)
+
+========== Main Dataset Ready ==========
+
+Data Size :  (5814, 133)
+
+========== Data Saved ==========
+
+Saved :  data/lux_data.csv

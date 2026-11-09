@@ -1,0 +1,16 @@
+Execution Started :  2026-11-08T20:56:14
+
+========== Data Load Completed ==========
+
+Data Size :  (5814, 133)
+
+========== Preprocessing Completed ==========
+
+Removed Target Rows :  0
+Missing Feature Values :  0
+
+========== Data Saved ==========
+
+Saved :  data/lux_preprocessed.csv
+Final Data Size :  (5814, 37)
+Feature Count :  35

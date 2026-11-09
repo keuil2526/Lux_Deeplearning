@@ -1,0 +1,86 @@
+keuil@keuil-ThinkPad-E14-Gen-6:~/Documents/Lux_Deeplearning$ python 04_random_forest.py 
+
+========== Data Load Completed ==========
+
+   C_mean_luma  C_std_luma  C_grad_mean  C_grad_std  UL_mean_luma  ...  square_center_minus_corners_luma  square_grid_range_mean_luma  square_grid_std_mean_luma  target_lux  session
+0    59.590080    3.613703     3.083970    1.565949     47.316120  ...                         11.175308                    15.967415                   3.827790         250     F001
+1    14.319895    3.040496     2.792961    1.396636     19.613487  ...                         -4.978929                    13.623574                   4.050549         250     F001
+2    31.626556    3.112819     2.633283    1.346964     29.260841  ...                          2.041922                    14.641460                   3.449009         250     F001
+3     7.701016    3.109485     2.883672    1.432133     15.302629  ...                         -5.926892                    13.680962                   4.114491         250     F001
+4     5.566411    2.972675     2.757092    1.375340     11.995129  ...                         -7.057668                    15.136990                   4.821993         250     F001
+
+[5 rows x 37 columns]
+Data Size :  (5814, 37)
+Index(['C_mean_luma', 'C_std_luma', 'C_grad_mean', 'C_grad_std',
+       'UL_mean_luma', 'UL_std_luma', 'UL_grad_mean', 'UL_grad_std',
+       'UR_mean_luma', 'UR_std_luma', 'UR_grad_mean', 'UR_grad_std',
+       'LR_mean_luma', 'LR_std_luma', 'LR_grad_mean', 'LR_grad_std',
+       'LL_mean_luma', 'LL_std_luma', 'LL_grad_mean', 'LL_grad_std',
+       'corner_mean_luma', 'corner_std_luma', 'corner_range_luma',
+       'C_minus_corner_mean_luma', 'C_over_corner_mean_luma',
+       'square_mean_luma', 'square_std_luma', 'square_grad_mean',
+       'square_grad_std', 'square_mean_sat_proxy',
+       'square_bottom_minus_top_luma', 'square_right_minus_left_luma',
+       'square_center_minus_corners_luma', 'square_grid_range_mean_luma',
+       'square_grid_std_mean_luma'],
+      dtype='str') (5814, 35)
+(5814,)
+Train Data :  (4590, 35)
+Test Data :  (1224, 35)
+
+========== Model Performance ==========
+
+MAE : 78.0521
+RMSE : 119.6975
+R2 : 0.9014
+
+========== Each Fold R2 ==========
+
+Fold_1 : 0.9129
+Fold_2 : 0.9291
+Fold_3 : 0.9389
+Fold_4 : 0.9277
+Fold_5 : 0.9437
+
+Average_R2 : 0.9304
+
+========== Feature Importance ==========
+
+                             Feature  Importance
+16                      LL_mean_luma    0.327896
+0                        C_mean_luma    0.124802
+28                   square_grad_std    0.121229
+9                        UR_std_luma    0.071174
+20                  corner_mean_luma    0.052180
+18                      LL_grad_mean    0.042999
+4                       UL_mean_luma    0.040705
+8                       UR_mean_luma    0.036283
+5                        UL_std_luma    0.022949
+7                        UL_grad_std    0.020209
+26                   square_std_luma    0.017656
+12                      LR_mean_luma    0.013175
+1                         C_std_luma    0.010507
+6                       UL_grad_mean    0.010029
+31      square_right_minus_left_luma    0.009312
+13                       LR_std_luma    0.008962
+29             square_mean_sat_proxy    0.007801
+30      square_bottom_minus_top_luma    0.007412
+25                  square_mean_luma    0.006621
+17                       LL_std_luma    0.005342
+14                      LR_grad_mean    0.005180
+33       square_grid_range_mean_luma    0.004347
+11                       UR_grad_std    0.003681
+32  square_center_minus_corners_luma    0.003476
+19                       LL_grad_std    0.002798
+24           C_over_corner_mean_luma    0.002764
+21                   corner_std_luma    0.002762
+10                      UR_grad_mean    0.002692
+15                       LR_grad_std    0.002653
+27                  square_grad_mean    0.002524
+23          C_minus_corner_mean_luma    0.002086
+2                        C_grad_mean    0.002007
+3                         C_grad_std    0.001962
+22                 corner_range_luma    0.001920
+34         square_grid_std_mean_luma    0.001908
+
+========== Results Saved ==========
